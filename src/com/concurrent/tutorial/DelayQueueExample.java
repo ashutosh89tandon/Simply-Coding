@@ -9,8 +9,8 @@ public class DelayQueueExample {
 	public static void main(String[] args) throws InterruptedException {
         DelayQueue queue = new DelayQueue();
 
-        Delayed element1 = new DelayedElement(1,2000);
-        Delayed element3 = new DelayedElement(1,4000);
+        Delayed element1 = new DelayedElement(1,4000);
+        Delayed element3 = new DelayedElement(1,2000);
         queue.put(element1);
         queue.put(element3);
         Delayed element2 = queue.take();
